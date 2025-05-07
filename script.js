@@ -36,7 +36,7 @@ form.addEventListener('submit', async (e) => {
   const formDataUpload = new FormData();
   formDataUpload.append('file', blob, 'mitgliedsantrag.pdf');
 
-  const uploadUrl = 'DEINE_GOOGLE_APPS_SCRIPT_URL'; // <-- hier einfügen
+  const uploadUrl = 'https://script.google.com/macros/s/AKfycbw3gAB6mja3EEqVr8vBbT1m6Tqpu27XP5ZgY9K-8lGJHkx5PXaPfEdypLl1xd1Pj0tCRA/exec'; // <-- hier einfügen
   const response = await fetch(uploadUrl, { method: 'POST', body: formDataUpload });
   alert('Formular wurde hochgeladen!');
 });
