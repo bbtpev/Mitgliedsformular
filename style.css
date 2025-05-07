@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+input, select {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+}
+canvas {
+  background-color: white;
+}

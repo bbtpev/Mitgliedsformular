@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitgliedsanmeldung – Beach Bang Theory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mitgliedsanmeldung – Beach Bang Theory Paderborn e.V.</h1>
+  <form id="membership-form">
+    <label>Geschlecht:
+      <select name="geschlecht">
+        <option value="männlich">männlich</option>
+        <option value="weiblich">weiblich</option>
+        <option value="anders">anders</option>
+      </select>
+    </label><br />
+    <label>Name, Vorname: <input type="text" name="name" required /></label><br />
+    <label>Straße, Hausnummer: <input type="text" name="strasse" required /></label><br />
+    <label>PLZ, Ort: <input type="text" name="ort" required /></label><br />
+    <label>Geburtsdatum: <input type="date" name="gebdatum" required /></label><br />
+    <label>Geburtsort: <input type="text" name="gebort" required /></label><br />
+    <label>Telefonnummer: <input type="tel" name="telefon" /></label><br />
+    <label>E-Mail-Adresse: <input type="email" name="email" /></label><br /><br />
+
+    <label>Unterschrift:<br />
+      <canvas id="signature-pad" width="400" height="150" style="border:1px solid #000"></canvas>
+      <button type="button" id="clear">Unterschrift löschen</button>
+    </label><br /><br />
+
+    <button type="submit">Absenden</button>
+  </form>
+
+  <script src="pdf-lib.min.js"></script>
+  <script src="signature_pad.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
