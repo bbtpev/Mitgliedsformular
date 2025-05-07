@@ -1,7 +1,7 @@
 const form = document.getElementById('membership-form');
 const canvas = document.getElementById('signature-pad');
 const clearButton = document.getElementById('clear');
-const signaturePad = new SignaturePad(canvas);
+const signaturePad = new signaturePad(canvas);
 
 clearButton.addEventListener('click', () => signaturePad.clear());
 
